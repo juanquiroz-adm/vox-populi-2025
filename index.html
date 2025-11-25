@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VOX POPULI: Informe Estadístico por La Variable.">
+    <title>VOX POPULI | La Variable</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="VOX POPULI | La Variable">
+    <meta property="og:description" content="Radiografía Estadística: ¿Información democrática o intoxicación digital? N=50.">
+    <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/2991/2991108.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="svg/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="svg/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="svg/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <p class="brand-tag">UNA PRODUCCIÓN DE <strong>LA VARIABLE</strong></p>
+            
+            <h1 class="main-title glitch" data-text="VOX POPULI">VOX POPULI</h1>
+            
+            <p class="subtitle">ECOSISTEMAS DE POLARIZACIÓN • VALLE DE ABURRÁ 2025</p>
+            
+            <div class="data-badge">
+                <span>N=50 (DATA REAL)</span>
+                <span>JUAN CAMILO VALDERRAMA</span>
+            </div>
+
+            <div class="scroll-trigger">
+                <p>LA VERDAD ESTADÍSTICA</p>
+                <div class="arrow">↓</div>
+            </div>
+        </div>
+    </header>
+
+    <section class="content-section" id="intro">
+        <div class="text-block">
+            <span class="chapter">01. LA PARADOJA</span>
+            <h2>CONSUMO CÍNICO</h2>
+            <p>Nuestra investigación revela una fractura en la confianza digital. Los jóvenes del Valle de Aburrá consumen intensamente, pero no creen. Con un promedio de confianza de <strong>2.6 sobre 5</strong>, la audiencia navega en un mar de escepticismo.</p>
+        </div>
+        
+        <div class="chart-container">
+            <div class="stat-box">
+                <span class="big-number">52%</span>
+                <span class="label">NEUTRALIDAD (Nivel 3)</span>
+                <p class="stat-desc">La mayoría se refugia en el centro, mientras el 38% desconfía abiertamente (Niveles 1 y 2).</p>
+            </div>
+            <div class="chart-wrapper">
+                <canvas id="chartConfianza"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="plataformas">
+        <div class="text-block right">
+            <span class="chapter">02. EL CAMPO DE BATALLA</span>
+            <h2>LA HEGEMONÍA DE X</h2>
+            <p>Contra todo pronóstico global, nuestra muestra (54% Millennials) no prefiere el baile de TikTok, sino el debate de <strong>X (Twitter)</strong>. El <strong>38%</strong> elige esta plataforma como su fuente primaria, priorizando el texto sobre el video.</p>
+        </div>
+
+        <div class="chart-container reverse">
+            <div class="chart-wrapper">
+                <canvas id="chartPlataformas"></canvas>
+            </div>
+            <div class="stat-box">
+                <span class="big-number">38%</span>
+                <span class="label">PREFIERE TWITTER</span>
+                <p class="stat-desc">Superando a Facebook (16%) y TikTok (14%). La audiencia busca confrontación, no solo entretenimiento.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="polarizacion">
+        <div class="text-block">
+            <span class="chapter">03. CÁMARAS DE ECO</span>
+            <h2>EL BUCLE INFINITO</h2>
+            <p>¿Las redes cambian tu voto? La data dice <strong>NO</strong>. Para el <strong>40%</strong>, las redes solo sirvieron para reforzar lo que ya pensaban. Solo un <strong>4%</strong> cambió de opinión. Bienvenido a tu burbuja.</p>
+        </div>
+
+        <div class="grid-stats">
+            <div class="card">
+                <h3>PERCEPCIÓN DE POLARIZACIÓN</h3>
+                <canvas id="chartPolarizacion"></canvas>
+                <p class="caption">El 86% siente que el odio aumenta (40% Mucho + 46% Un poco).</p>
+            </div>
+            <div class="card">
+                <h3>IMPACTO EN EL VOTO</h3>
+                <canvas id="chartVoto"></canvas>
+                <p class="caption">Refuerzo masivo (40%) vs. Conversión mínima (4%).</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h2 style="font-family: 'Syncopate'; margin-bottom: 20px;"><a href="https://www.lavariable.site" target="_blank">LA VARIABLE</a></h2>
+            <p>Juan Camilo Valderrama Quiroz</p>
+            <p class="details">Estadística Aplicada 2025 • Docente: Julián Gómez</p>
+            
+            <a href="doc/informe.pdf" download="Informe_Vox_Populi_La_Variable.pdf" target="_blank" class="btn-download">
+                Descargar Informe Oficial (PDF)
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
