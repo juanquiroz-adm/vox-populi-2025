@@ -1,1 +1,1 @@
-# vox-populi-2025
+# vox-populi
